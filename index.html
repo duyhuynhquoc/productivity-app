@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=1920, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Eisenhower matrix</title>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header class="navbar"></header>
+
+		<!-- BOARD SELECTOR -->
+		<div class="board-selector">
+			<ul>
+				<li>
+					<a href="#">Today</a>
+				</li>
+				<li><a href="#">Board 2</a></li>
+			</ul>
+		</div>
+
+		<!-- MAIN BOARD -->
+		<div class="main-board">
+			<div class="row main-row">
+				<!-- MATRIX -->
+				<div class="matrix">
+					<h3 id="urgent">Urgent</h3>
+					<h3 id="not-urgent">Not Urgent</h3>
+					<h3 id="important">Important</h3>
+					<h3 id="not-important">Not important</h3>
+
+					<div class="matrix__main">
+						<div class="row quadrant-row">
+							<!-- Quadrant 1 -->
+							<div class="quadrant quadrant-1">
+								<div class="add-task">
+									<div class="add-task__button">
+										<ion-icon name="add-outline"></ion-icon>
+										<h4>Add a task</h4>
+									</div>
+									<div class="add-task__input">
+										<input type="text" name="" id="" placeholder="Add a task" />
+										<ion-icon
+											name="add-outline"
+											class="submit-button"
+										></ion-icon>
+									</div>
+								</div>
+
+								<div class="task-list quadrant__task-list">
+									<div class="task quadrant__task-list__task" draggable="true">
+										<div class="round">
+											<input type="checkbox" id="checkbox" />
+											<label for="checkbox"></label>
+										</div>
+										<h4>Todo 1</h4>
+									</div>
+								</div>
+							</div>
+
+							<!-- Quadrant 2 -->
+							<div class="quadrant quadrant-2">
+								<div class="add-task">
+									<div class="add-task__button">
+										<ion-icon name="add-outline"></ion-icon>
+										<h4>Add a task</h4>
+									</div>
+									<div class="add-task__input">
+										<input type="text" name="" id="" placeholder="Add a task" />
+										<ion-icon
+											name="add-outline"
+											class="submit-button"
+										></ion-icon>
+									</div>
+								</div>
+								<div class="task-list quadrant__task-list"></div>
+							</div>
+						</div>
+						<div class="row quadrant-row">
+							<!-- Quadrant 3 -->
+							<div class="quadrant quadrant-3">
+								<div class="add-task">
+									<div class="add-task__button">
+										<ion-icon name="add-outline"></ion-icon>
+										<h4>Add a task</h4>
+									</div>
+									<div class="add-task__input">
+										<input type="text" name="" id="" placeholder="Add a task" />
+										<ion-icon
+											name="add-outline"
+											class="submit-button"
+										></ion-icon>
+									</div>
+								</div>
+								<div class="task-list quadrant__task-list"></div>
+							</div>
+
+							<!-- Quadrant 4 -->
+							<div class="quadrant quadrant-4">
+								<div class="add-task">
+									<div class="add-task__button">
+										<ion-icon name="add-outline"></ion-icon>
+										<h4>Add a task</h4>
+									</div>
+									<div class="add-task__input">
+										<input type="text" name="" id="" placeholder="Add a task" />
+										<ion-icon
+											name="add-outline"
+											class="submit-button"
+										></ion-icon>
+									</div>
+								</div>
+								<div class="task-list quadrant__task-list"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- MAIN TASK LIST -->
+				<div class="main-task-list">
+					<h3>Tasks</h3>
+					<div class="task-list main-task-list__task-list"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./js/dragAndDrop.js"></script>
+	<script src="./js/addTask.js"></script>
+	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</html>
